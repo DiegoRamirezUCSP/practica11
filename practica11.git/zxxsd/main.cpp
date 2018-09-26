@@ -38,28 +38,31 @@ for(int K=0;K<leghtt;K++){
 
 //problema 3
 
-bool perfeccion(const int arrrrr[],const int leghttt){
+bool primo(const int arrrrr[],const int leghttt){
 
 
-    for(int ii=2; ii<leghttt; ii++){
+    for(int ii=0; arrrrr[ii]<arrrrr[leghttt]; ii++){
             int e=0;
-            for (int jj=1; jj<ii;jj++){
-                if(ii%jj==0){
+            for (int jj=1; jj<arrrrr[ii];jj++){
+                if(arrrrr[ii]%jj==0){
                    e += 1;}
             }
         if (e<2){
-            cout << i << endl;
+           return arrrrr[ii];
 
             }
         }
-int foo[] = {26,22,13,23};
+}
+int foo[] = {22,13,23};
 int n, result=0;
 
 int main ()
 {
-  cout << suma(foo,3) << endl;
-  cout << menorelemento(foo,3) << endl;
-  cout << perfeccion(foo,3) << endl;
+  cout << suma(foo,2) << endl;
+  cout << menorelemento(foo,2) << endl;
+
+  cout << primo(foo,2) << endl;
+    cout << perfeccion(foo,2) << endl;
   return 0;
 }
 
