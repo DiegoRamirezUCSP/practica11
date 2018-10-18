@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1539814095 source:c:\users\mi pc\desktop\practica\src\todq.cpp
+
+1539815780 source:c:\users\mi pc\desktop\practica\main.cpp
+	<iostream>
+	"todq.h"
+
+1539814810 c:\users\mi pc\desktop\practica\include\todq.h
+
